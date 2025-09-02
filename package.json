@@ -1,0 +1,87 @@
+{
+	"name": "@ydvaakash/tickit-web-client",
+	"private": true,
+	"version": "0.1.0",
+	"description": "Web client for the Tickit app.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "tsc -b && vite build",
+		"lint:check": "eslint . --max-warnings=0",
+		"lint:fix": "eslint . --fix",
+		"preview": "vite preview",
+		"prettier": "prettier . --write",
+		"prettier:check": "prettier . --check",
+		"prepare": "husky",
+		"check-before-commit": "prettier . --write && eslint . --max-warnings=0"
+	},
+	"author": {
+		"name": "Aakash Yadav",
+		"github": "https://github.com/ydvaakash"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tickit-organization/tickit-web-client"
+	},
+	"keywords": [
+		"todo-app",
+		"task-manager",
+		"react",
+		"typescript",
+		"vite",
+		"redux",
+		"tailwindcss",
+		"frontend",
+		"front-end",
+		"fullstack",
+		"full-stack",
+		"state-management",
+		"react-router-dom",
+		"vite-react",
+		"react-typescript",
+		"responsive-ui",
+		"spa",
+		"single-page-application",
+		"component-based",
+		"frontend-architecture",
+		"ui-development",
+		"client-side",
+		"frontend-project",
+		"tickit-frontend",
+		"Aakash Yadav",
+		"ydvaakash",
+		"web-app",
+		"modern-web-app"
+	],
+	"license": "Apache-2.0",
+	"dependencies": {
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.33.0",
+		"@types/react": "^19.1.10",
+		"@types/react-dom": "^19.1.7",
+		"@vitejs/plugin-react": "^5.0.0",
+		"eslint": "^9.33.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"globals": "^16.3.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.5",
+		"prettier": "3.6.2",
+		"serve": "^14.2.4",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.39.1",
+		"vite": "^7.1.2"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix --max-warnings=0"
+		],
+		"*.{json,css,md}": [
+			"prettier --write"
+		]
+	}
+}
