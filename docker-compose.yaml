@@ -1,0 +1,19 @@
+services:
+  tickit-web-client:
+    container_name: "tickit-web-client"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - tickit-organization-network
+    command: npm run dev
+
+networks:
+  tickit-organization-network:
+    external: true
+    name: tickit-organization-network

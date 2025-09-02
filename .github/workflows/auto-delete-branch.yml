@@ -1,8 +1,8 @@
 name: Auto Delete Branch on Dev Merge
 
 on:
-  pull_request: 
-    types: 
+  pull_request:
+    types:
       - closed
 
 jobs:
@@ -13,7 +13,6 @@ jobs:
       github.event.pull_request.head.ref != 'development' &&
       github.event.pull_request.head.ref != 'main'
     runs-on: ubuntu-latest
-
     steps:
       - name: Delete source branch
         uses: dawidd6/action-delete-branch@v3
